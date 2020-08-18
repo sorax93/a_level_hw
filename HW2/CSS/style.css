@@ -1,0 +1,40 @@
+blockquote {
+    color: green;
+}
+
+a[href^="https"] {
+    color: red;
+}
+ul.list>li:last-child {
+    background-color: green;
+}
+
+ul.list+p {
+    font-size: 26px;
+}
+
+.text-box>h3:first-child {
+    color: pink;
+}
+#greycol {
+    color: grey;
+}
+.text-box>div>p {
+    color: red;
+}
+.text-box>p:nth-of-type(3) {
+    color: green;
+}
+.yellow {
+    color: yellow;
+}
+
+.bg-box {
+    width: 500px; 
+    height: 350px;
+    background-color: green;
+    background-image: url('../img/grass-png-images-pictures-transparent-28.png'), url('../img/lamp-png-0.png'), url('../img/Ёжик.png'), url('../img/58eb07b830eab15b56162788.png'), url('../img/pole-zelen-trava-dom-derevya.jpg') ;
+    background-size: auto 100px, auto 39px, auto 12px, auto 15px, auto 200px;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+    background-position: bottom, top, left, right, center;
+}

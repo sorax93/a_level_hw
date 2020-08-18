@@ -1,0 +1,182 @@
+*:before,
+*:after,
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+  flex: 0 0 auto;
+  padding: 15px;
+  background-color: gold;
+}
+.top-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+li {
+    padding: 0 5px 0 5px;
+    list-style: none;
+}
+li:hover {
+  text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+main {
+  display: flex;
+  flex: 1 0 auto;
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+.maincontent>p {
+  text-align: center;
+  order: -1;
+  margin: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card1, .card2, .card3, .card4, .card5, .card6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+.card1:hover {
+  background: yellow;
+  color: white;
+} 
+.card2:hover {
+  background: gold;
+  color: white;
+} 
+.card3:hover {
+  background: blue;
+  color: white;
+} 
+.card4:hover {
+  background: red;
+  color: white;
+} 
+.card5:hover {
+  background: green;
+  color: white;
+} 
+.card6:hover {
+  background: rgb(163, 147, 5);
+  color: white;
+}
+.card-img {
+  width: 40%;
+  border: 15px solid lightgray;
+  border-radius: 50%;
+}
+.card-p {
+  height: 100%;
+  margin: 0px;
+}
+.btn-wrap {
+  margin: 10px;
+}
+.btn {
+  background: darkmagenta;  
+  border-radius: 15px;
+  padding: 4px 15px;
+  color: white;
+}
+.btn:hover {
+  background: khaki;
+  color: blue;
+}
+.blocks {
+  margin: 10px;
+}
+.holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 112px;
+  border: 2px solid black;
+  border-radius: 20px 20px 0 0;
+}
+.holder :first-child {
+  background: red;
+  order: -2;
+  flex: 2 1 50%;
+  border-top-left-radius: 18px;
+}
+.holder :nth-child(2) {
+  background: skyblue;
+  flex: 1 2 33%;
+}
+.holder :nth-child(3) {
+  background: rebeccapurple;
+  order: -1;
+  flex: 1 2 33%;
+}
+.holder :nth-child(4) {
+  background: green;
+  flex: 1 2 33%;
+}
+.holder :nth-child(5) {
+  background: yellow;
+  order: -2;
+  flex: 2 1 50%;
+  border-top-right-radius: 18px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aside-block1, .aside-block2 {
+  display: flex;
+  justify-content: center;
+  min-width: 210px;
+}
+.aside-block1 {
+  order: -1;
+  background-color: plum;
+}
+.aside-block2 {
+  background-color: powderblue;
+}
+footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  background-color: lightgreen;
+}

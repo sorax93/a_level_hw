@@ -1,0 +1,145 @@
+.task-1 {
+    width: 550px;
+    height: 460px;
+    background-color: #0d5825;
+    padding-top: 25px;
+}
+blockquote {
+    color: white; 
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-size: 25px;
+}
+p {
+    margin: 0;
+}
+.playcard-1, .playcard-2, .playcard-3 {
+    width: 150px;
+    height: auto;
+}
+.playcard-1 {
+    transform: translate(165px, 20px) rotate(-20deg);
+}
+.playcard-2 {
+    transform: translate(55px, 25px) rotate(-8deg);
+}
+.playcard-3 {
+    transform: translate(-50px, 45px) rotate(10deg);
+}
+.playcard-1, .playcard-2, .playcard-3{
+    transition-duration: 1s;
+}
+.playcard-1:hover {
+    transform: translate(160px, 5px) rotate(-20deg);
+}
+.playcard-2:hover {
+    transform: translate(55px, 10px) rotate(-8deg);
+}
+.playcard-3:hover {
+    transform: translate(-50px, 20px) rotate(10deg);
+}
+.task-2 {
+    margin: 10px 0 10px 0;
+    height: 120px;
+    width: 120px;
+}
+.square-1, .square-2, .square-3, .square-4 {
+    width: 60px;
+    height: 60px;
+}
+.square-1 {
+    background-color: red;
+    opacity: 50%;
+}
+.square-2 {
+    background-color: green;
+    opacity: 50%;
+    transform: translate(60px);
+}
+.square-3 {
+    background-color: white;
+    transform: translate(30px, -90px);
+}
+.square-4 {
+    background-color: blue;
+    opacity: 50%;
+    transform: translate(30px, -150px);
+}
+.menu {
+    margin: 0px;
+    background-color: grey;
+    width: 250px;
+    height: 400px;
+    transform: translateX(-225px);
+    transition-duration: 1s;
+}
+.menuhere {
+    font-size: 20px;
+    color: white;
+    transform: translate(110px, 270px) rotate(90deg);
+}
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+li:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: gold;
+    transform: rotate(-45deg);
+    border: 1px solid black;
+    float: left;
+    margin: 6px 6px 0 0; 
+}
+a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.5s;
+}
+.menu:hover {
+    transform: translateX(0);
+}
+.menu:hover .menuhere{
+    visibility: hidden;
+}
+a:hover {
+    color: yellow;
+}
+.block {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.slide {
+    animation-name: slide;
+}
+@keyframes slide {
+    0% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+    25% {
+        transform: translate(0, 200px);
+        background-color: blue;
+    }
+    50% {
+        transform: translate(200px, 200px);
+        background-color: green;
+    }
+    75% {
+        transform: translate(200px, 0);
+        background-color: yellow;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+}
